@@ -24,5 +24,5 @@ h1:nth-of-type(4n) {
 }
 
 section:first-of-type h1:nth-of-type(1) { /* first section, first h1 */
-    transform: rotate(45deg); /*can also use grad (gradians), rad (radians), and turns */
+    transform: rotate(180deg); /*can also use grad (gradians), rad (radians), and turns */
 }
