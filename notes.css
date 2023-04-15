@@ -26,3 +26,5 @@ h1:nth-of-type(4n) {
 section:first-of-type h1:nth-of-type(1) { /* first section, first h1 */
     transform: rotate(180deg); /*can also use grad (gradians), rad (radians), and turns */
 }
+
+/* by default the transform origin is center. It can be changed by transform-origin: and by using keywords or pixels */
