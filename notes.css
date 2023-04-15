@@ -1,30 +1,39 @@
-h1 {
-    background-color: #2a9d8f;
-    border: 5px solid #264653;
-    color: #eae2b7;
-    padding: 0.7em;
-    width: 300px;
-    font-size: 1.8em;
-    text-align: center;
-    margin: 20px auto; /* left and right margin set to auto will center the element in its container */
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
-}
+    h1 {
+        background-color: #2a9d8f;
+        border: 5px solid #264653;
+        color: #eae2b7;
+        padding: 0.7em;
+        width: 300px;
+        font-size: 1.8em;
+        text-align: center;
+        margin: 20px auto; /* left and right margin set to auto will center the element in its container */
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: lighter;
+    }
 
-h1:nth-of-type(2n) {
-    background-color: #e9c46a;
-}
+    h1:nth-of-type(2n) {
+        background-color: #e9c46a;
+    }
 
-h1:nth-of-type(3n) {
-    background-color: #f4a261;
-}
+    h1:nth-of-type(3n) {
+        background-color: #f4a261;
+    }
 
-h1:nth-of-type(4n) {
-    background-color: #e76f51;
-}
+    h1:nth-of-type(4n) {
+        background-color: #e76f51;
+    }
 
-section:first-of-type h1:nth-of-type(1) { /* first section, first h1 */
-    transform: rotate(45deg); /*can also use grad (gradians), rad (radians), and turns. Rotations can also be rotated on each axis (x,y,z) for a 3d effect */
-}
+/* first section, first h1 */
+    section:first-of-type h1:nth-of-type(1) { 
+        transform: rotate(45deg); /*can also use grad (gradians), rad (radians), and turns. Rotations can also be rotated on each axis (x,y,z) for a 3d effect */
+    }
 
 /* by default the transform origin is center. It can be changed by transform-origin: and by using keywords or pixels */
+
+/* Scale: changes the size. Can scale the whole thing or per axis etc */
+
+    section:first-of-type h1:nth-of-type(2) {
+        transform: scale(0.5); /* multiplier */
+    }    
+
+/* Translate: moves things along an axis/plane */
